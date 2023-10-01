@@ -1,0 +1,57 @@
+@media (max-width: 796px){
+    main::after{
+        background: linear-gradient(0deg, #000 20%, rgba(0, 0, 0, 0.0) 65%) no-repeat;
+        width: 100vw;
+    }
+
+    .image{
+        height: 85%;
+    }
+
+    .content{
+        justify-content: flex-end;
+        left: 0;
+        top: -20%;
+        max-width: 100vw;
+        padding: 30px;
+    }
+    .nome{
+        font-size: 36px;
+    }
+    .descricao{
+        max-width: 500px;
+    }
+
+    .botton{
+        flex-direction: row;
+        align-items: flex-end;
+        width: 100%;
+        padding: 30px;
+    }
+    botao img{
+        padding: 60px;
+    }
+}
+
+@media (max-width: 425px) {
+    .image{
+        height: 640px;
+    }
+    .logo{
+        width: 170px;
+        height: 75px;
+    }
+    .content{
+        top: -30%;
+    }
+    .nome{
+        font-size: 24px;
+    }
+    .botton{
+        padding: 20px;
+        top: -20%;
+    }
+    .botao img{
+        max-width: 50px;
+    }
+}

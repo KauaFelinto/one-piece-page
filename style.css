@@ -1,0 +1,112 @@
+/*fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+/*estilo*/
+
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+main::after{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 80vw;
+
+    background: linear-gradient(-233deg, #000 40%, rgba(0, 0, 0, 0) 65%) no-repeat;
+}
+
+main .personagem {
+    display: none;
+    height: 100vh;
+}
+
+.personagem.select{
+    display: block;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 360px;
+    z-index: 1;
+}
+
+.nome{
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Secular One', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.descricao{
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    line-height: 24px;
+}
+
+.logo{
+    background-image: url(assets/one-piece-logo.png);
+    background-size: cover;
+    height: 100px;
+    width: 230px;
+    margin-bottom: 35px;
+}
+
+.botton{
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.botao{
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.botao img{
+    border-radius: 50%;
+}
+
+.botao img:hover{
+    transition: .3s;
+    transform: scale(1.3);
+    box-shadow: 0 0 15px #d9d9d9;
+}
