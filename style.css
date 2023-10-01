@@ -103,6 +103,7 @@ main .personagem {
 }
 .botao img{
     border-radius: 50%;
+    transition: .3s;
 }
 
 .botao img:hover{
